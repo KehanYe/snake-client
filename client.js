@@ -11,12 +11,15 @@ const connect = () => {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log("We're know in the grid");
-  })
-
-  conn.on("connect", () => {
+    console.log("We're now in the grid");
     conn.write("Name: Yee");
   })
+
+  // conn.on("connect", () => {
+  //   setInterval(() => {
+  //     conn.write("Move: up")
+  //   }, 500);
+  // })
 
   conn.on("data", (data) => {
     console.log(data);
