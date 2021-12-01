@@ -28,6 +28,18 @@ const handleUserInput = (key) => {
       if(key === 'd') {
         conn.write("Move: right")
       }
+      if(key === 'q') {
+        conn.write("Say: Runaway from me")
+      }
+      if(key === 'e') {
+        conn.write("Say: Runaway from me baby")
+      }
+      if(key === 'r') {
+        conn.write("Say: Runaway fast as you can")
+      }
+      if(key === 't') {
+        conn.write("Say: Kanye West")
+      }
   // })
 }
 
